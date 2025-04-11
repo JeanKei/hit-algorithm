@@ -1,3 +1,26 @@
+## Comparison of RotatE and RotatE-NormMLP Results
+
+To compare the results of the RotatE and RotatE-NormMLP models, we can present them in a table to clearly see what improvements have been achieved.
+
+| Metric                     | RotatE  | RotatE-NormMLP | Difference |
+| -------------------------- | ------- | -------------- | ---------- |
+| Hits@1                     | 0.00455 | 0.00515        | +0.00060   |
+| Hits@3                     | 0.00749 | 0.00859        | +0.00110   |
+| Hits@5                     | 0.00929 | 0.01020        | +0.00091   |
+| Hits@10                    | 0.01250 | 0.01340        | +0.00090   |
+| Mean Reciprocal Rank (MRR) | 0.00894 | 0.00971        | +0.00077   |
+| Evaluation Time (sec)      | 684.61  | 712.88         | -28.27 sec |
+
+### Evaluation of Improvements:
+
+- **Hits@1, Hits@3, Hits@5, Hits@10**: All of these metrics showed improvements in the RotatE-NormMLP model, with the largest gains in Hits@3 (+0.00110) and Hits@5 (+0.00091).
+- **MRR**: The Mean Reciprocal Rank (MRR) also improved by +0.00077.
+- **Evaluation Time**: The evaluation time increased by 28.27 seconds, which may be due to added regularization and normalization layers.
+
+### Conclusion:
+
+The RotatE-NormMLP model demonstrates improvements across all key metrics, including Hits@1, Hits@3, Hits@5, Hits@10, and Mean Reciprocal Rank (MRR). While the evaluation time has increased—likely due to additional normalization and regularization operations—the improvements in performance metrics may justify the longer runtime.
+
 ## Setup Instructions
 
 ### 1. Setup Neo4j Database
@@ -80,5 +103,5 @@ python RotatE.py
 ```
 
 ```bash
-RotatENormMLP.py
+python RotatENormMLP.py
 ```

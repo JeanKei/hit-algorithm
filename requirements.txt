@@ -1,0 +1,7 @@
+neo4j==4.4.12  # Совместим с Python 3.8 и старыми версиями Neo4j
+pandas==1.3.5   # Работает с Python 3.8
+pykeen==1.8.0   # Стабильная версия для старых проектов
+numpy==1.21.6   # Совместимость с pandas и pykeen
+tqdm==4.64.0    # Для прогресс-баров в PyKeen
+torch==1.12.1   # PyKeen зависит от PyTorch (версия для Python 3.8)
+scikit-learn==0.24.2  # Совместим с Python 3.8 и PyKeen

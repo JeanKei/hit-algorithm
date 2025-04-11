@@ -83,7 +83,7 @@ results = {
 }
 
 # Путь к файлу JSON
-json_file_path = 'rotate-norm-mlp.json'
+json_file_path = 'rotate-norm-mlp-log.json'
 
 # Записываем результаты в JSON файл
 with open(json_file_path, 'w') as json_file:
